@@ -3,52 +3,62 @@
   <head>
     <title>Flex Box</title>
     <style>
-      .card-container {
-        background-color: bisque;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 200px;
+      .item {
+        height: 100px;
+        width: 100px;
+        background-color: hsl(185, 27%, 90%);
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px rgb(94, 89, 89);
       }
 
-      .card {
-        border: 4px double black;
-        width: 150px;
-        background-color: hwb(326 85% 13%);
-        margin: 5px;
+      .container {
+        height: 380px;
+        width: 400px;
+        background-color: #ee9fdc;
+        padding: 5px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
       }
-
       .card-img {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         border-radius: 7px 7px 0 0;
       }
 
-      .card-title {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
+      
+  .card-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 24px; /* Add this line to set the font size */
+}
+
+
     </style>
   </head>
 
   <body>
-    <div class="card-container">
-      <div class="card">
-        <img src="image 1.jpg" class="card-img" />
-        <h2 class="card-title">One</h2>
-      </div>
-
-      <div class="card">
-        <img src="image 2.jpg" class="card-img" />
-        <h2 class="card-title">Two</h2>
-      </div>
-
-      <div class="card">
-        <img src="image 3.jpg" class="card-img" />
-        <h2 class="card-title">Three</h2>
-      </div>
+  
+        <div class="container">
+          <div class="item">
+            <img src="image 1.jpg" class="card-img" />
+            <h2 class="card-title">One</h2>
+          </div>
+          <div class="container">
+            <div class="item">
+              <img src="image 2.jpg" class="card-img" />
+              <h2 class="card-title">two</h2>
+            </div>
+            <div class="container">
+              <div class="item">
+                <img src="image 3.jpg" class="card-img" />
+                <h2 class="card-title">three</h2>
+              </div>
+      
     </div>
   </body>
 </html>
