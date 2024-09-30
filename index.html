@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Box</title>
+    <style>
+      .card-container {
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 200px;
+      }
+
+      .card {
+        border: 4px double black;
+        width: 150px;
+        background-color: hwb(326 85% 13%);
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      .card-img {
+        height: 150px;
+        width: 150px;
+        border-radius: 7px 7px 0 0;
+      }
+
+      .card-title {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img src="image 1.jpg" class="card-img" />
+        <h2 class="card-title">One</h2>
+      </div>
+
+      <div class="card">
+        <img src="image 2.jpg" class="card-img" />
+        <h2 class="card-title">Two</h2>
+      </div>
+
+      <div class="card">
+        <img src="image 3.jpg" class="card-img" />
+        <h2 class="card-title">Three</h2>
+      </div>
+    </div>
+  </body>
+</html>
